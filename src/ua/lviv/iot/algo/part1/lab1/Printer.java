@@ -28,16 +28,7 @@ public class Printer {
     public static Printer getInstance() {
         return instance;
     }
-    public String ToString() {
-        return "Printer {"+
-                "model=" + model +
-                "type='" + type + '\'' +
-                "isColor='" + isColor + '\'' +
-                "isDuplex='" + isDuplex + '\'' +
-                "paperTrayCapacity='" + paperTrayCapacity + '\'' +
-                "paperCount=" + paperCount +
-                '}';
-    }
+   
     public void loadPaper(int count) {
         paperCount += count;
         if (paperCount > paperTrayCapacity) {
